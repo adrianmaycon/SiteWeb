@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Light Bootstrap Dashboard React - v1.3.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/light-bootstrap-dashboard-react
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/light-bootstrap-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-/*eslint-disable*/
 import React, { Component } from "react";
 import Toggle from "react-toggle";
 
@@ -48,9 +30,9 @@ class FixedPlugin extends Component {
             <i className="fa fa-cog fa-2x" />
           </div>
           <ul className="dropdown-menu">
-            <li className="header-title">Configuration</li>
+            <li className="header-title">Temas</li>
             <li className="adjustments-line">
-              <p className="pull-left">Background Image</p>
+              <p className="pull-left">Imagem de Fundo</p>
               <div className="pull-right">
                 <Toggle
                   defaultChecked={this.state.bg_checked}
@@ -61,7 +43,7 @@ class FixedPlugin extends Component {
             </li>
             <li className="adjustments-line">
               <a className="switch-trigger">
-                <p>Filters</p>
+                <p>Cor:</p>
                 <div className="pull-right">
                   <span
                     className={
@@ -105,17 +87,6 @@ class FixedPlugin extends Component {
                     data-color="orange"
                     onClick={() => {
                       this.props.handleColorClick("orange");
-                    }}
-                  />
-                  <span
-                    className={
-                      this.props.bgColor === "red"
-                        ? "badge filter badge-red active"
-                        : "badge filter badge-red"
-                    }
-                    data-color="red"
-                    onClick={() => {
-                      this.props.handleColorClick("red");
                     }}
                   />
                   <span
@@ -176,38 +147,6 @@ class FixedPlugin extends Component {
                 }}
               >
                 <img src={imagine4} alt="..." />
-              </a>
-            </li>
-
-            <li className="button-container">
-              <div className="">
-                <a
-                  href="https://www.creative-tim.com/product/light-bootstrap-dashboard-react?ref=lbdr-fixed-plugin"
-                  target="_blank"
-                  className="btn btn-success btn-block btn-fill"
-                >
-                  Download free!
-                </a>
-              </div>
-            </li>
-            <li className="button-container">
-              <div className="">
-                <a
-                  href="https://www.creative-tim.com/product/light-bootstrap-dashboard-pro-react?ref=lbdr-fixed-plugin"
-                  target="_blank"
-                  className="btn btn-warning btn-block btn-fill"
-                >
-                  Buy Pro
-                </a>
-              </div>
-            </li>
-            <li className="button-container">
-              <a
-                href="https://demos.creative-tim.com/light-bootstrap-dashboard-react/#/documentation/getting-started?ref=lbdr-fixed-plugin"
-                target="_blank"
-                className="btn btn-fill btn-info"
-              >
-                Documentation
               </a>
             </li>
           </ul>
